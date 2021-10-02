@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>FLASK CSV File Upload</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+  <body>
+    <h1>Upload   files</h1>
+    <form method="POST" action="" enctype="multipart/form-data">
+      <label for="age">inpatient data</label>
+      <p><input type="file" name="inpatient" placeholder="inpatient" required="required"></p>
+      <br>
+      <label for="age">outpatient data</label>
+      <p><input type="file" name="outpatient"></p>
+      <br>
+      <label for="age">benefeciary data</label>
+      <p><input type="file" name="benefeciary"></p>
+      <br>
+      <p><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></p>
+    </form>
+    <h1>{{ prediction_text }}</h1>
+  </body>
+</html>
